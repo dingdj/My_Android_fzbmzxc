@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stations>
+	<station id="101">
+		<name>左海公园北门站</name>
+		<address>铜盘路左海北门西侧</address>
+		<lng>119.292203</lng>
+		<lat>26.107372</lat>
+		<dist>0</dist>
+		<enable>1</enable>
+	</station>
+	<station id="102">
+		<name>左海公园西门站</name>
+		<address>二环路左海西门西侧</address>
+		<lng>119.287882</lng>
+		<lat>26.103969</lat>
+		<dist>0</dist>
+		<enable>1</enable>
+	</station>
+	<station id="103">
+		<name>屏山站</name>
+		<address>鼓屏路北段农产品展示中心前</address>
+		<lng>119.303335</lng>
+		<lat>26.103616</lat>
+		<dist>0</dist>
+		<enable>1</enable>
+	</station>
+	<station id="104">
+		<name>华林四桥站</name>
+		<address>华林路最佳西方财富酒店东侧</address>
+		<lng>119.317953</lng>
+		<lat>26.109541</lat>
+		<dist>0</dist>
+		<enable>1</enable>
+	</station>
+	<station id="105">
+		<name>中山路口站</name>
+		<address>湖东路厦门国际银行西侧</address>
+		<lng>119.308015</lng>
+		<lat>26.098857</lat>
+		<dist>0</dist>
+		<enable>1</enable>
+	</station>
+	<station id="106">
+		<name>温泉公园站</name>
+		<address>温泉公园路温泉公园北门东侧</address>
+		<lng>119.318117</lng>
+		<lat>26.105178</lat>
+		<dist>0</dist>
+		<enable>1</enable>
+	</station>
+	<station id="107">
+		<name>西湖公园站</name>
+		<address>西湖公园正门东侧</address>
+		<lng>119.297067</lng>
+		<lat>26.096957</lat>
+		<dist>0</dist>
+		<enable>1</enable>
+	</station>
+	<station id="108">
+		<name>五四路中段站</name>
+		<address>五四路王府井百货前</address>
+		<lng>119.312484</lng>
+		<lat>26.097923</lat>
+		<dist>0</dist>
+		<enable>1</enable>
+	</station>
+	<station id="109">
+		<name>软件园站</name>
+		<address>软件大道软件园正门东侧</address>
+		<lng>119.276898</lng>
+		<lat>26.119054</lat>
+		<dist>0</dist>
+		<enable>1</enable>
+	</station>
+	<station id="110">
+		<name>东街口万霞广场站</name>
+		<address>鼓屏路万霞广场前</address>
+		<lng>119.30532</lng>
+		<lat>26.095364</lat>
+		<dist>0</dist>
+		<enable>1</enable>
+	</station>
+	<station id="111">
+		<name>鼓东路站</name>
+		<address>鼓东路东路口北侧</address>
+		<lng>119.310169</lng>
+		<lat>26.096286</lat>
+		<dist>0</dist>
+		<enable>1</enable>
+	</station>
+	<station id="112">
+		<name>温泉支路站</name>
+		<address>温泉支路温泉宾馆对面</address>
+		<lng>119.319379</lng>
+		<lat>26.09683</lat>
+		<dist>0</dist>
+		<enable>1</enable>
+	</station>
+	<station id="113">
+		<name>屏东中学屏北分校站</name>
+		<address>琴亭路屏东中学屏北分校斜对路</address>
+		<lng>119.307922</lng>
+		<lat>26.124107</lat>
+		<dist>0</dist>
+		<enable>1</enable>
+	</station>
+	<station id="114">
+		<name>省新闻出版局站</name>
+		<address>东水路省新闻出版局门口南侧</address>
+		<lng>119.321653</lng>
+		<lat>26.089802</lat>
+		<dist>0</dist>
+		<enable>1</enable>
+	</station>
+	<station id="115">
+		<name>鼓二小站</name>
+		<address>东泰路鼓二小正门对面</address>
+		<lng>119.309395</lng>
+		<lat>26.090577</lat>
+		<dist>0</dist>
+		<enable>1</enable>
+	</station>
+	<station id="116">
+		<name>蒙古营站</name>
+		<address>五一北路五金批发公司前</address>
+		<lng>119.315594</lng>
+		<lat>26.090139</lat>
+		<dist>0</dist>
+		<enable>1</enable>
+	</station>
+	<station id="117">
+		<name>省体育中心站</name>
+		<address>五四北路省体育中心公交站旁</address>
+		<lng>119.312546</lng>
+		<lat>26.116915</lat>
+		<dist>0</dist>
+		<enable>1</enable>
+	</station>
+	<station id="118">
+		<name>乌石山北坡站</name>
+		<address>乌石山北坡公园</address>
+		<lng>119.301871</lng>
+		<lat>26.082897</lat>
+		<dist>0</dist>
+		<enable>1</enable>
+	</station>
+	<station id="119">
+		<name>光禄坊站</name>
+		<address>光禄坊公园正对面</address>
+		<lng>119.301188</lng>
+		<lat>26.085224</lat>
+		<dist>0</dist>
+		<enable>1</enable>
+	</station>
+	<station id="120">
+		<name>五一广场站</name>
+		<address>古田路福建省科技馆北侧</address>
+		<lng>119.316502</lng>
+		<lat>26.082216</lat>
+		<dist>0</dist>
+		<enable>1</enable>
+	</station>
+	<station id="121">
+		<name>六一环岛站</name>
+		<address>六一环岛古田支路路口</address>
+		<lng>119.325413</lng>
+		<lat>26.082614</lat>
+		<dist>0</dist>
+		<enable>1</enable>
+	</station>
+	<station id="122">
+		<name>省委党校站</name>
+		<address>西二环中路省委党校西门</address>
+		<lng>119.290748</lng>
+		<lat>26.081365</lat>
+		<dist>0</dist>
+		<enable>1</enable>
+	</station>
+	<station id="123">
+		<name>冠亚广场站</name>
+		<address>乌山路冠亚广场大洋晶典西侧</address>
+		<lng>119.306232</lng>
+		<lat>26.081772</lat>
+		<dist>0</dist>
+		<enable>1</enable>
+	</station>
+	<station id="124">
+		<name>鼓楼区市民服务中心站</name>
+		<address>津泰路98号鼓楼区委大院3号楼前</address>
+		<lng>119.310326</lng>
+		<lat>26.08799</lat>
+		<dist>0</dist>
+		<enable>1</enable>
+	</station>
+
+	<station id="125">
+		<name>五四路信和广场南侧交通银行前</name>
+		<address>五四路信和广场南侧交通银行前</address>
+		<lng>119.313057</lng>
+		<lat>26.10216</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="126">
+		<name>鼓西路孙老营巷路口东北侧</name>
+		<address>鼓西路孙老营巷路口东北侧</address>
+		<lng>119.298383</lng>
+		<lat>26.094766</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="127">
+		<name>杨桥路元帅路路口东北侧</name>
+		<address>杨桥路元帅路路口东北侧</address>
+		<lng>119.301447</lng>
+		<lat>26.092043</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="128">
+		<name>梅峰路与梅峰支路交叉口西北侧</name>
+		<address>梅峰路与梅峰支路交叉口西北侧</address>
+		<lng>119.279947</lng>
+		<lat>26.102305</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="129">
+		<name>美之国二期门口东侧</name>
+		<address>美之国二期门口东侧</address>
+		<lng>119.27204</lng>
+		<lat>26.10132</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="130">
+		<name>北江滨路融侨锦江段</name>
+		<address>北江滨路融侨锦江段</address>
+		<lng>119.271227</lng>
+		<lat>26.077269</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="131">
+		<name>凤湖路与乌山西路交叉西南侧口（融侨锦江）</name>
+		<address>凤湖路与乌山西路交叉西南侧口（融侨锦江）</address>
+		<lng>119.280845</lng>
+		<lat>26.072816</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="132">
+		<name>省图书馆正门东侧</name>
+		<address>省图书馆正门东侧</address>
+		<lng>119.319795</lng>
+		<lat>26.100247</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="133">
+		<name>古田路光大银行前</name>
+		<address>古田路光大银行前</address>
+		<lng>119.321675</lng>
+		<lat>26.082293</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="134">
+		<name>六一路莲宅小区西侧</name>
+		<address>六一路莲宅小区西侧</address>
+		<lng>119.32578</lng>
+		<lat>26.080294</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="135">
+		<name>湖滨新城小区门口东侧</name>
+		<address>湖滨新城小区门口东侧</address>
+		<lng>119.29297</lng>
+		<lat>26.096928</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="136">
+		<name>五四路省老干局公交站后</name>
+		<address>五四路省老干局公交站后</address>
+		<lng>119.312809</lng>
+		<lat>26.113162</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="137">
+		<name>公益路1号北侧</name>
+		<address>公益路1号北侧</address>
+		<lng>119.313708</lng>
+		<lat>26.12424</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="138">
+		<name>华屏路龙峰农副产品综合市场正对面</name>
+		<address>华屏路龙峰农副产品综合市场正对面</address>
+		<lng>119.307413</lng>
+		<lat>26.111389</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="139">
+		<name>二环路国棉永辉东侧</name>
+		<address>二环路国棉永辉东侧</address>
+		<lng>119.304471</lng>
+		<lat>26.114827</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="140">
+		<name>江厝路与省直湖前路交叉口</name>
+		<address>江厝路与省直湖前路交叉口</address>
+		<lng>119.30139</lng>
+		<lat>26.119421</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="141">
+		<name>天元花园正门北侧</name>
+		<address>天元花园正门北侧</address>
+		<lng>119.295228</lng>
+		<lat>26.11511</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="142">
+		<name>二环路中机中泰别克4S店前</name>
+		<address>二环路中机中泰别克4S店前</address>
+		<lng>119.291858</lng>
+		<lat>26.109077</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="143">
+		<name>五凤兰亭社区</name>
+		<address>五凤兰亭社区</address>
+		<lng>119.296368</lng>
+		<lat>26.106977</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="144">
+		<name>白龙路省军区干休所对面</name>
+		<address>白龙路省军区干休所对面</address>
+		<lng>119.282282</lng>
+		<lat>26.107809</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="145">
+		<name>大儒世家</name>
+		<address>大儒世家</address>
+		<lng>119.265447</lng>
+		<lat>26.092523</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="146">
+		<name>洪山桥头公交站</name>
+		<address>洪山桥头公交站</address>
+		<lng>119.261993</lng>
+		<lat>26.083784</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="147">
+		<name>金牛山公园正门西侧</name>
+		<address>金牛山公园正门西侧</address>
+		<lng>119.267653</lng>
+		<lat>26.082561</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="148">
+		<name>乌山西路美景良辰门口西侧</name>
+		<address>乌山西路美景良辰门口西侧</address>
+		<lng>119.290234</lng>
+		<lat>26.077651</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="149">
+		<name>杨桥永辉正门西侧</name>
+		<address>杨桥永辉正门西侧</address>
+		<lng>119.289899</lng>
+		<lat>26.088609</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="150">
+		<name>西洪路与文林山路交叉口西北侧</name>
+		<address>西洪路与文林山路交叉口西北侧</address>
+		<lng>119.285911</lng>
+		<lat>26.089534</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="151">
+		<name>茶园山小学正对面</name>
+		<address>茶园山小学正对面</address>
+		<lng>119.281916</lng>
+		<lat>26.085467</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="152">
+		<name>福大东门北侧</name>
+		<address>福大东门北侧</address>
+		<lng>119.282925</lng>
+		<lat>26.08081</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="153">
+		<name>福中路西路口(安泰街道)</name>
+		<address>福中路西路口(安泰街道)</address>
+		<lng>119.303642</lng>
+		<lat>26.078149</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="154">
+		<name>通湖路西湖影剧院南200米</name>
+		<address>通湖路西湖影剧院南200米</address>
+		<lng>119.296954</lng>
+		<lat>26.095578</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="155">
+		<name>屏西小区内</name>
+		<address>屏西小区内</address>
+		<lng>119.294234</lng>
+		<lat>26.112346</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="156">
+		<name>梁厝路国光新村正门西侧</name>
+		<address>梁厝路国光新村正门西侧</address>
+		<lng>119.261433</lng>
+		<lat>26.089213</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="157">
+		<name>西河游泳场内</name>
+		<address>西河游泳场内</address>
+		<lng>119.266106</lng>
+		<lat>26.080104</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+	<station id="158">
+		<name>古乐路省六建后门东侧</name>
+		<address>古乐路省六建后门东侧</address>
+		<lng>119.322781</lng>
+		<lat>26.078748</lat>
+		<dist>0</dist>
+		<enable>0</enable>
+	</station>
+</stations>
