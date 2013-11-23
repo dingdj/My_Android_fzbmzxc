@@ -4,5 +4,10 @@
           android:icon="@drawable/menu_refresh"
           android:title="@string/refresh"
           android:showAsAction="ifRoom|withText" />
+    
+    <item android:id="@+id/menu_share"
+          android:icon="@drawable/widget_bar_share"
+          android:title="@string/share"
+          android:showAsAction="ifRoom|withText" />
 
 </menu>

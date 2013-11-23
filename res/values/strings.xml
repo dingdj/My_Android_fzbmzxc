@@ -3,6 +3,6 @@
 
     <string name="app_name">福州便民自行车</string>
     <string name="refresh">刷新</string>
+    <string name="share">分享</string>
     <string name="hello_world">Hello world!</string>
-
 </resources>

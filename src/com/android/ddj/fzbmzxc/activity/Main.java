@@ -1,5 +1,6 @@
 package com.android.ddj.fzbmzxc.activity;
 
+
 import com.android.ddj.fzbmzxc.Location;
 import com.android.ddj.fzbmzxc.LocationChanger;
 import com.android.ddj.fzbmzxc.R;
@@ -211,6 +212,9 @@ public class Main extends ListActivity implements LocationChanger {
 				mLocClient.requestLocation();
 				isStart = true;
 			}
+		}else if(item.getItemId() == R.id.menu_share){
+			//分享到
+			UIHelper.showShareDialog(this, "我正在使用福州便民自行车，你也一起来吧...", "http://weibo.com");
 		}
 		return true;
 	}
