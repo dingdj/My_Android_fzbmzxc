@@ -8,12 +8,17 @@ import com.android.ddj.fzbmzxc.Station;
 import com.android.ddj.fzbmzxc.StationManager;
 import com.baidu.location.LocationClient;
 import com.baidu.location.LocationClientOption;
+import com.handmark.pulltorefresh.library.PullToRefreshBase;
+import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
+import com.handmark.pulltorefresh.library.PullToRefreshListView;
+
 import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -40,6 +45,7 @@ public class Main extends ListActivity implements LocationChanger {
 	private StationManager stationManager;
 	private boolean isDealData = false;
 	private volatile Station[] stations;
+	private PullToRefreshListView mPullRefreshListView;
 	
 	private Handler handler = new Handler(){
 
@@ -48,6 +54,9 @@ public class Main extends ListActivity implements LocationChanger {
 			super.handleMessage(msg);
 			stations = (Station[]) msg.obj;
 			adapter.notifyDataSetChanged();
+			if(mPullRefreshListView != null){
+				mPullRefreshListView.onRefreshComplete();
+			}
 		}
 		
 	};
@@ -57,6 +66,8 @@ public class Main extends ListActivity implements LocationChanger {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		setContentView(R.layout.list_content_simple);
+		mPullRefreshListView = (PullToRefreshListView) findViewById(R.id.pull_refresh_list);
 		stationManager = StationManager.getInstance(this);
 		stations = stationManager.getStations();
 		mLocClient = ((Location)getApplication()).mLocationClient;
@@ -65,7 +76,30 @@ public class Main extends ListActivity implements LocationChanger {
 		mLocClient.start();
 		isStart = true;
 		adapter = new LocationListAdapter(this);
-		setListAdapter(adapter);
+		ListView actualListView = mPullRefreshListView.getRefreshableView();
+		actualListView.setAdapter(adapter);
+		mPullRefreshListView.setOnRefreshListener(new OnRefreshListener<ListView>() {
+		    @Override
+		    public void onRefresh(PullToRefreshBase<ListView> refreshView) {
+		        // Do work to refresh the list here.
+		    	Toast.makeText(refreshView.getContext(), "正在定位请稍候..", 2000).show();
+				if(!isStart){
+					mLocClient.requestLocation();
+					isStart = true;
+				}
+				
+				refreshView.postDelayed(new Runnable(){
+
+					@Override
+					public void run() {
+						// TODO Auto-generated method stub
+						mPullRefreshListView.onRefreshComplete();
+					}
+					
+				}, 5000);
+		    }
+		});
+
 	}
 	
 	/**
@@ -115,8 +149,15 @@ public class Main extends ListActivity implements LocationChanger {
 					isDealData = false;
 					//通知数据已经获得
 					Message message = Message.obtain();
-					message.obj = stationManager.getTopNNearStation(10, ((Location)getApplication()).curLatLng);
-					handler.sendMessage(message);
+					try{
+						//当第一次定位成功后 防止定位不成功 得不到当前位置导致crash
+						if(((Location)getApplication()).isFirstLocate()){
+							message.obj = stationManager.getTopNNearStation(10, ((Location)getApplication()).curLatLng);
+							handler.sendMessage(message);
+						}
+					}catch(Exception e){
+						e.printStackTrace();
+					}
 				}
 			}).start();
 		}
@@ -206,13 +247,14 @@ public class Main extends ListActivity implements LocationChanger {
 	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item){
-		if(item.getItemId() == R.id.menu_loc){
+		/*if(item.getItemId() == R.id.menu_loc){
 			Toast.makeText(this, "正在定位请稍候..", 2000).show();
 			if(!isStart){
 				mLocClient.requestLocation();
 				isStart = true;
 			}
-		}else if(item.getItemId() == R.id.menu_share){
+		}else*/ 
+		if(item.getItemId() == R.id.menu_share){
 			//分享到
 			UIHelper.showShareDialog(this, "我正在使用福州便民自行车，你也一起来吧...", "http://weibo.com");
 		}

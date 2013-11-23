@@ -25,6 +25,7 @@ public class Location extends Application{
 	public double[] curLatLng = new double[2]; //当前位置的经纬度信息
 	private LocationChanger locationChanger;
 	public BMapManager mBMapMan = null;
+	private boolean firstLocate = false;
 	private static Location mInstance;
 	
 	@Override
@@ -74,6 +75,7 @@ public class Location extends Application{
 			logMsg(sb.toString());
 			curLatLng[0] = location.getLatitude();
 			curLatLng[1] = location.getLongitude();
+			firstLocate = true;
 			notityLocationChanger();
 		}
 		
@@ -162,6 +164,11 @@ public class Location extends Application{
             }
         }
     }
+
+	public boolean isFirstLocate() {
+		return firstLocate;
+	}
 	
+    
 
 }
